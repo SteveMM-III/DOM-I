@@ -29,10 +29,7 @@ class Timer {
             }
          }
 
-         document.querySelector('#msTens').textContent = _this.milsT;
-         document.querySelector('#msHundreds').textContent = _this.milsH;
-         document.querySelector('#secondOnes').textContent = _this.secsO;
-         document.querySelector('#secondTens').textContent = _this.secsT;
+         _this.setTextContent( _this.milsT, _this.milsH, _this.secsO, _this.secsT );
 
          if ( _this.secsT === 1 ) { clearInterval( _this.interval ); }
 
@@ -49,10 +46,14 @@ class Timer {
       this.secsO = 0;
       this.secsT = 0;
       
-      document.querySelector('#msTens').textContent = 0;
-      document.querySelector('#msHundreds').textContent = 0;
-      document.querySelector('#secondOnes').textContent = 0;
-      document.querySelector('#secondTens').textContent = 0;
+      this.setTextContent( 0, 0, 0, 0 );
+   }
+   
+   setTextContent( mT, mH, sO, sT ) {
+      document.querySelector('#msTens').textContent = mT;
+      document.querySelector('#msHundreds').textContent = mH;
+      document.querySelector('#secondOnes').textContent = sO;
+      document.querySelector('#secondTens').textContent = sT;
    }
 }//================================================
 
