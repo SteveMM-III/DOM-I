@@ -46,7 +46,7 @@ logo.setAttribute( 'src', siteContent["nav"]["img-src"] )
 //------- 1
 const nav         = document.querySelector   ( 'nav' );
 const navLinks    = document.querySelectorAll( "nav a" );
-const navValues   = Object.values            (siteContent.nav);
+const navValues   = Object.values            ( siteContent.nav );
 const cta_h1      = document.querySelector   ( '.cta-text h1' );
 const cta_button  = document.querySelector   ( '.cta-text button' );
 const cta_img     = document.querySelector   ( '#cta-img' );
@@ -146,25 +146,4 @@ nav.appendChild( post );
 
 //============================= Stretch =================================================
 pre.style.marginLeft = '2rem';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
