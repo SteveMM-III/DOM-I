@@ -89,10 +89,10 @@ window.onload = function() {
 const btnStartFn = () => {
    myTimer.start();
    startButton.disabled = true;
-}
+};
 
 const btnResetFn = () => {
    myTimer.reset();
    startButton.disabled = false;
-}
+};
 //====================== EoF ======================
