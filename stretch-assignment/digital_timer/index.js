@@ -82,7 +82,6 @@ buttonDiv.appendChild( resetButton );
 // On Load
 window.onload = function() {
    document.body.appendChild( buttonDiv );
-   document.body.style.display = "flex";
    document.body.style["flex-direction"] = 'column';
 };
 
