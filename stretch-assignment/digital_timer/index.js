@@ -64,10 +64,7 @@ const buttonDiv   = document.createElement( 'div' );
 const startButton = document.createElement( 'button' );
 const resetButton = document.createElement( 'button' );
 
-//  Attributes & Styles
-startButton.setAttribute( 'onclick', 'btnStartFn();' );
-resetButton.setAttribute( 'onclick', 'btnResetFn();' );
-
+//  Attributes, Styles, Texts & Appends
 startButton.style.margin = "0 2rem";
 startButton.textContent  = 'Start';
 
@@ -95,4 +92,8 @@ const btnResetFn = () => {
    myTimer.reset();
    startButton.disabled = false;
 };
+
+//================ Event Listeners ================
+startButton.addEventListener( 'click', btnStartFn );
+resetButton.addEventListener( 'click', btnResetFn );
 //====================== EoF ======================
